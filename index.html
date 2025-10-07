@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ravintola Mauste</title>
+  <meta name="description" content="Ravintola Mauste — herkullista ruokaa ja hyvä palvelu.">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  
+  <header>
+    <h1>Ravintola Mauste</h1>
+    <p>Hyvän ruoan ja iloisen tunnelman koti</p>
+
+    
+    <nav aria-label="Päävalikko">
+      <ul>
+        <li><a href="tietoa.html">Tietoa</a></li>
+        <li><a href="ruokalista.html">Ruokalista</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li><a href="varaus.html">Varaus</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section id="about">
+      <h2>Tietoa meistä</h2>
+      <p>
+        Ravintola Mauste on perheomisteinen ravintola, joka tarjoaa
+        suosikkiruokia suomalaisista ja kansainvälisistä raaka-aineista.
+        Keittiömestarimme käyttävät kauden tuoreita aineksia ja valmistavat annokset
+        rakkaudella.
+      </p>
+      <p><strong>Aukiolo:</strong> Ma–Pe 11:00–21:00, La–Su 12:00–22:00</p>
+    </section>
+
+    
+    <section id="menu">
+      <h2>Ruokalista</h2>
+
+      <article aria-labelledby="starters">
+        <h3 id="starters">Alkupalat</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tuote</th>
+              <th>Kuvaus</th>
+              <th>Hinta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paahdettu leipä & hummus</td>
+              <td>Itse leivottu leipä, lämmin hummus, oliiviöljyä</td>
+              <td>8,50 €</td>
+            </tr>
+            <tr>
+              <td>Keittiömestarin keitto</td>
+              <td>Muuttuva päivän keitto, tarjoillaan tuoreen leivän kanssa</td>
+              <td>7,00 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article aria-labelledby="mains">
+        <h3 id="mains">Pääruoat</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tuote</th>
+              <th>Kuvaus</th>
+              <th>Hinta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lohta uunissa</td>
+              <td>Lohifilee, perunapyree, kauden vihannekset</td>
+              <td>18,50 €</td>
+            </tr>
+            <tr>
+              <td>Kasviswokki</td>
+              <td>Tofu, wokatut kasvikset, soija-inkivääri-kastike</td>
+              <td>15,00 €</td>
+            </tr>
+            <tr>
+              <td>Naudan entrecôte</td>
+              <td>Paistettu entrecôte, yrttivoi, paistetut perunat</td>
+              <td>24,00 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article aria-labelledby="desserts">
+        <h3 id="desserts">Jälkiruoat</h3>
+        <ul>
+          <li>Suklaafondant — 7,50 €</li>
+          <li>Marjajäätelöannos — 6,50 €</li>
+        </ul>
+      </article>
+    </section>
+
+    
+    <section id="reservations">
+      <h2>Varaa pöytä</h2>
+      <p>Täytä alla oleva lomake tai soita: <strong>+358 40 123 4567</strong></p>
+
+      <form action="#" method="post" aria-label="Varauslomake">
+        <div>
+          <label for="name">Nimi</label><br>
+          <input type="text" id="name" name="name" required placeholder="Etunimi Sukunimi">
+        </div>
+
+        <div>
+          <label for="email">Sähköposti</label><br>
+          <input type="email" id="email" name="email" required placeholder="nimi@esimerkki.fi">
+        </div>
+
+        <div>
+          <label for="phone">Puhelin</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="+358401234567">
+        </div>
+
+        <div>
+          <label for="date">Päivämäärä</label><br>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div>
+          <label for="time">Kellonaika</label><br>
+          <input type="time" id="time" name="time" required>
+        </div>
+
+        <div>
+          <label for="guests">Vieraita</label><br>
+          <input type="number" id="guests" name="guests" min="1" max="20" value="2" required>
+        </div>
+
+        <div>
+          <label for="requests">Erityistoiveet</label><br>
+          <textarea id="requests" name="requests" rows="4" placeholder="Esim. ruokarajoitteet tai istumatoiveet"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Lähetä varaus</button>
+        </div>
+      </form>
+    </section>
+
+    
+    <section id="contact">
+      <h2>Yhteystiedot</h2>
+      <address>
+        Ravintola Esimerkki<br>
+        Esimerkkikatu 1<br>
+        00100 Helsinki<br>
+        Puhelin: <a href="tel:+358401234567">+358 40 123 4567</a><br>
+        Sähköposti: <a href="mailto:info@esimerkki.fi">info@esimerkki.fi</a>
+      </address>
+
+      <h3>Ajo-ohjeet</h3>
+      <p>Raitiovaunupysäkki X:n vieressä. Pysäköinti kadunvarressa ja lähistön parkkitaloissa.</p>
+
+      
+      <div>
+        <p><strong>Sijainti kartalla (esimerkki)</strong></p>
+        <iframe
+          title="Ravintolan sijainti"
+          src="https://www.google.com/maps?q=Helsinki&output=embed"
+          width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; <span id="year">2025</span> Ravintola Mauste.</p>
+    <p>
+      Seuraa meitä:
+      <a href="#" aria-label="Ravintola Instagram">Instagram</a> |
+      <a href="#" aria-label="Ravintola Facebook">Facebook</a>
+    </p>
+  </footer>
+
+  
+  <script>
+    
+    (function () {
+      var y = new Date().getFullYear();
+      var el = document.getElementById('year');
+      if (el) el.textContent = y;
+    })();
+  </script>
+</body>
+</html>
